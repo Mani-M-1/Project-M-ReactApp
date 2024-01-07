@@ -2,8 +2,12 @@ import './index.css';
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 
+
+import config from './config';
+
+
 const RiseIssue = () => {
-    const appUrl = process.env.REACT_APP_DEPLOYED_BACKEND_URL || process.env.REACT_APP_BACKEND_URL 
+    const apiUrl = config.API_BASE_URL;
 
     const navigate = useNavigate()
 
@@ -35,7 +39,7 @@ const RiseIssue = () => {
         if (email.length > 0 && issueTitle.length >= 4 && issueDescription.length >= 4) {
             const issueDetails = {email, issueTitle, issueDescription};
 
-            const url = `${appUrl}/rise-issue`
+            const url = `${apiUrl}/rise-issue`
             const options = {
                 method: 'POST',
                 headers: {

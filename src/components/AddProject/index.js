@@ -3,9 +3,14 @@ import { useState, useContext } from 'react';
 import userContext from '../../context/user/userContext';
 import { useNavigate } from 'react-router-dom';
 
+
+
+import config from './config';
+
+
 const AddProject = () => {
 
-    const appUrl = process.env.REACT_APP_BACKEND_URL || process.env.REACT_APP_DEPLOYED_BACKEND_URL
+    const apiUrl = config.API_BASE_URL;
 
     const [form, setForm] = useState({projectTitle: '', projectDescription: '', startDate: '', endDate: ''})
 
@@ -43,7 +48,7 @@ const AddProject = () => {
         if (projectTitle.length >= 4 && projectDescription.length >= 4 && startDate.length > 0 && endDate.length > 0) {
             const projectDetails = {projectTitle, projectDescription, startDate, endDate, userId: userDetailsFromContext.state.orgId};
 
-            const url = `${appUrl}/project`
+            const url = `${apiUrl}/project`
             const options = {
                 method: 'POST',
                 headers: {

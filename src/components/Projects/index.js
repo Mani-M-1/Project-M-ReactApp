@@ -10,9 +10,11 @@ import userContext from '../../context/user/userContext';
 import ModalForDeleteProject from './ModalForDeleteProject';
 
 
+import config from './config';
+
 function Projects() {
-  const appUrl = process.env.REACT_APP_DEPLOYED_BACKEND_URL || process.env.REACT_APP_BACKEND_URL 
-  
+  const apiUrl = config.API_BASE_URL;
+
   const [searchInput, setSearchInput] = useState('');
 
   const [projectsArr, setProjectsArr] = useState([]);
@@ -36,7 +38,7 @@ function Projects() {
   
 
   const handleOnclickAcceptDelete = async (projectId) => {
-      const url = `${appUrl}/project/${projectId}`
+      const url = `${apiUrl}/project/${projectId}`
       const options = {
           method: 'Delete',
           headers: {
@@ -130,7 +132,7 @@ function Projects() {
 
   const getAllProjects = async () => {
     
-    const url = `${appUrl}/project/find/${userDetailsFromContext.state.orgId}?search_q=${searchInput}`;
+    const url = `${apiUrl}/project/find/${userDetailsFromContext.state.orgId}?search_q=${searchInput}`;
     const response = await fetch(url);
     const data = await response.json();
 

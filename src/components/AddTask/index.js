@@ -5,6 +5,11 @@ import { useNavigate} from 'react-router-dom';
 
 
 
+import config from './config';
+
+
+
+
 
 
 // this object represents various "Views" of a component
@@ -18,9 +23,8 @@ const componentViews = {
 
 const AddTask = () => {
 
-    const appUrl = process.env.REACT_APP_BACKEND_URL || process.env.REACT_APP_DEPLOYED_BACKEND_URL
+    const apiUrl = config.API_BASE_URL;
 
-    
     const [view, setView] = useState(componentViews.initial)
 
 
@@ -45,7 +49,7 @@ const AddTask = () => {
 
 
     const getProjectTitle = async () => {
-        const url = `${appUrl}/project/${userDetailsFromContext.state.projectId}/${userDetailsFromContext.state.orgId}`;
+        const url = `${apiUrl}/project/${userDetailsFromContext.state.projectId}/${userDetailsFromContext.state.orgId}`;
         const response = await fetch(url);
         const data = await response.json();
         
@@ -82,7 +86,7 @@ const AddTask = () => {
         if (taskTitle.length >= 4 && taskDescription.length >= 4 && startDate.length > 0 && endDate.length > 0) {
             const taskDetails = {taskTitle, taskDescription, assignedTo, startDate, endDate, projectId: userDetailsFromContext.state.projectId, orgId: userDetailsFromContext.state.orgId, userId: userDetailsFromContext.state.userId};
 
-            const url = `${appUrl}/task/createTask`
+            const url = `${apiUrl}/task/createTask`
             const options = {
                 method: 'POST',
                 // mode: 'no-cors',

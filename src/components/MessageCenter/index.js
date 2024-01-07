@@ -5,9 +5,10 @@ import {BsSearch} from 'react-icons/bs';
 
 
 
+import config from './config';
 
 const MessageCenter = () => {
-    const appUrl = process.env.REACT_APP_DEPLOYED_BACKEND_URL || process.env.REACT_APP_BACKEND_URL 
+    const apiUrl = config.API_BASE_URL;
 
 
 
@@ -24,7 +25,7 @@ const MessageCenter = () => {
 
 
     const getAllUsers = async () => {
-        const url = `${appUrl}/rise-issue/find?search_q=${searchInput}`;
+        const url = `${apiUrl}/rise-issue/find?search_q=${searchInput}`;
         const response = await fetch(url);
         const data = await response.json();
 

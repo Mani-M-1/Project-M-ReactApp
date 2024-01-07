@@ -6,6 +6,10 @@ import {BsEyeSlash, BsEye} from 'react-icons/bs'
 
 
 
+import config from './config';
+
+
+
 const customStyles = {
   content: {
     top: '50%',
@@ -24,7 +28,7 @@ const customStyles = {
 
 function ModalForUser(props) {
 
-    const appUrl = process.env.REACT_APP_BACKEND_URL || process.env.REACT_APP_DEPLOYED_BACKEND_URL
+    const apiUrl = config.API_BASE_URL;
 
     const {isModalVisible, handleOnclickCloseModalIcon, userId, getAllUsers} = props;
 
@@ -58,7 +62,7 @@ function ModalForUser(props) {
 
 
     const getTaskDetails = async () => {
-        const url = `${appUrl}/manage-users/${userId}`;
+        const url = `${apiUrl}/manage-users/${userId}`;
         const response = await fetch(url);
         const data = await response.json();
         
@@ -88,7 +92,7 @@ function ModalForUser(props) {
             const userDetails = {username, email, password, organizationName} 
             
             // sending userDetails to backend using fetch method
-            const url = `${appUrl}/manage-users/${userId}`
+            const url = `${apiUrl}/manage-users/${userId}`
             const options = {
                 method: 'PUT',
                 headers: {

@@ -9,6 +9,8 @@ import userContext from '../../context/user/userContext';
 
 
 
+import config from './config';
+
 
 
 
@@ -17,7 +19,7 @@ import userContext from '../../context/user/userContext';
 
 const ManageUsers = () => {
 
-    const appUrl = process.env.REACT_APP_BACKEND_URL || process.env.REACT_APP_DEPLOYED_BACKEND_URL
+    const apiUrl = config.API_BASE_URL;
 
     const navigate = useNavigate();
 
@@ -47,7 +49,7 @@ const ManageUsers = () => {
 
 
     const getAllUsers = async () => {
-        const url = `${appUrl}/manage-users/find/${userDetailsFromContext.state.orgId}?search_q=${searchInput}`;
+        const url = `${apiUrl}/manage-users/find/${userDetailsFromContext.state.orgId}?search_q=${searchInput}`;
         const response = await fetch(url);
         const data = await response.json();
 
@@ -72,7 +74,7 @@ const ManageUsers = () => {
 
 
     const handleOnclickUserDeleteBtn = async (userId) => {
-        const url = `${appUrl}/manage-users/${userId}`
+        const url = `${apiUrl}/manage-users/${userId}`
         const options = {
             method: 'Delete',
             headers: {

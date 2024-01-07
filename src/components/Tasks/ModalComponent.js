@@ -9,6 +9,9 @@ import {AiOutlineClose} from 'react-icons/ai';
 import userContext from '../../context/user/userContext';
 
 
+import config from './config';
+
+
 const customStyles = {
   content: {
     top: '50%',
@@ -31,10 +34,10 @@ const componentViews = {
 }
 
 
+
 function ModalComponent(props) {
 
-    const appUrl = process.env.REACT_APP_DEPLOYED_BACKEND_URL || process.env.REACT_APP_BACKEND_URL 
-
+    const apiUrl = config.API_BASE_URL;
 
     const {isModalVisible, handleOnclickCloseModalIcon, taskId, isEditable, getAlltasks} = props;
 
@@ -89,7 +92,7 @@ function ModalComponent(props) {
 
         
 
-        const url = `${appUrl}/task/${taskId}/${userDetailsFromContext.state.orgId}`;
+        const url = `${apiUrl}/task/${taskId}/${userDetailsFromContext.state.orgId}`;
         const response = await fetch(url);
         const data = await response.json();
         
@@ -122,7 +125,7 @@ function ModalComponent(props) {
       if (taskTitle.length >= 4 && taskDescription.length >= 4 && assignedTo.length >= 4 && startDate.length > 0 && endDate.length > 0) {
           const taskDetails = {taskTitle, taskDescription, assignedTo, startDate, endDate};
 
-          const url = `${appUrl}/task/${taskId}/${userDetailsFromContext.state.orgId}/${userDetailsFromContext.state.userId}`
+          const url = `${apiUrl}/task/${taskId}/${userDetailsFromContext.state.orgId}/${userDetailsFromContext.state.userId}`
           const options = {
               method: 'PUT',
               headers: {

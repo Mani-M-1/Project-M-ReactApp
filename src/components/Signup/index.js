@@ -5,10 +5,11 @@ import {BsEyeSlash, BsEye} from 'react-icons/bs'
 
 
 
+import config from './config';
 
 
 function Signup() {
-    const appUrl = process.env.REACT_APP_DEPLOYED_BACKEND_URL || process.env.REACT_APP_BACKEND_URL 
+    const apiUrl = config.API_BASE_URL;
 
     const [form, setForm] = useState({username: '', email: '', password: '', organizationName: ''});
 
@@ -37,7 +38,7 @@ function Signup() {
             const userDetails = {username, email, password, organizationName} 
             
             // sending userDetails to backend using fetch method
-            const url = `${appUrl}/signup` 
+            const url = `${apiUrl}/signup` 
             const options = {
                 method: 'POST',
                 headers: {

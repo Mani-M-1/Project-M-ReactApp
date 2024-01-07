@@ -11,6 +11,8 @@ import userContext from '../../context/user/userContext';
 
 
 
+import config from './config';
+
 
 
 const rolesArr = [
@@ -55,7 +57,7 @@ const componentViews = {
 
 const AddUser = () => {
 
-    const appUrl = process.env.REACT_APP_BACKEND_URL || process.env.REACT_APP_DEPLOYED_BACKEND_URL
+    const apiUrl = config.API_BASE_URL;
 
     const navigate = useNavigate();
 
@@ -133,7 +135,7 @@ const AddUser = () => {
             const userDetails = {username, email, password, role, adminId: userDetailsFromContext.state.userId, frontendUrl: process.env.REACT_APP_FRONTEND_URL} 
             
             // sending userDetails to backend using fetch method
-            const url = `${appUrl}/manage-users/add-user/${userDetailsFromContext.state.orgId}`
+            const url = `${apiUrl}/manage-users/add-user/${userDetailsFromContext.state.orgId}`
             const options = {
                 method: 'POST',
                 headers: {

@@ -8,8 +8,12 @@ import {BsEyeSlash, BsEye} from 'react-icons/bs'
 import userContext from '../../context/user/userContext';
 
 
+import config from './config';
+
+
+
 function Login() {
-    const appUrl = process.env.REACT_APP_DEPLOYED_BACKEND_URL || process.env.REACT_APP_BACKEND_URL 
+    const apiUrl = config.API_BASE_URL;
 
     const [form, setForm] = useState({email: '', password: ''});
 
@@ -46,7 +50,7 @@ function Login() {
             const userDetails = {email, password} 
             
             // sending userDetails to backend using fetch method
-            const url = `${appUrl}/login`
+            const url = `${apiUrl}/login`
             const options = {
                 method: 'POST',
                 headers: {

@@ -5,8 +5,11 @@ import {BsEyeSlash, BsEye} from 'react-icons/bs'
 
 import userContext from '../../context/user/userContext';
 
+
+import config from './config';
+
 const Profile = () => {
-    const appUrl = process.env.REACT_APP_DEPLOYED_BACKEND_URL || process.env.REACT_APP_BACKEND_URL 
+    const apiUrl = config.API_BASE_URL;
 
     const [isSubmitSuccessfull, setIsSubmitSuccessfull] = useState(false);
 
@@ -26,7 +29,7 @@ const Profile = () => {
      const userDetailsFromContext = useContext(userContext);
    
     const getProfileDetailsFunc = async () => {
-        const url = `${appUrl}/profile/${userDetailsFromContext.state.userId}`
+        const url = `${apiUrl}/profile/${userDetailsFromContext.state.userId}`
         const response = await fetch(url)
         const data = await response.json()
         if (!response.ok) {
@@ -53,7 +56,7 @@ const Profile = () => {
             const userDetails = {username, email, password, organizationName} 
             
             // sending userDetails to backend using fetch method
-            const url = `${appUrl}/profile/${userDetailsFromContext.state.userId}`
+            const url = `${apiUrl}/profile/${userDetailsFromContext.state.userId}`
             const options = {
                 method: 'PUT',
                 headers: {
