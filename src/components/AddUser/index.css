@@ -1,0 +1,219 @@
+.add-user-bg-container {
+    box-sizing: border-box;
+    padding: 50px 30px;
+    height: calc(100% - 72px); 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.add-user-form {
+    width: 380px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.add-user-labels {
+    font-size: 12px;
+    font-weight: 600;
+    margin-top: 16px;
+    margin-bottom: 4px;
+}
+
+.add-user-inputs {
+    font-size: 14px;
+    padding: 18px 10px;
+    border: 2px solid rgb(226, 224, 224);
+    border-radius: 6px;
+    font-weight: 500;
+    height: 22px;
+    outline-color: rgb(141, 141, 141);
+}
+
+.add-user-password-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 6px;
+    position: relative;
+}
+
+.add-user-password-input {
+    width: 100%;
+    font-size: 14px;
+    padding: 18px 10px;
+    border: 2px solid rgb(226, 224, 224);
+    border-radius: 6px;
+    font-weight: 500;
+    height: 22px;
+    outline-color: rgb(141, 141, 141);
+}
+
+.add-user-eye-wrapper {
+    position: absolute;
+    right: 10px;
+    color: rgb(126, 125, 125);
+    background-color: transparent;
+    border: 0;
+    font-size: 16px;
+    outline: none;
+    cursor: pointer;
+}
+
+.add-user-select-element {
+    font-size: 14px;
+    padding: 8px;
+    border: 2px solid rgb(226, 224, 224);
+    border-radius: 6px;
+    font-weight: 500;
+    outline-color: rgb(141, 141, 141);
+}
+
+.add-user-btn {
+    height: 40px;
+    border: 0;
+    border-radius: 4px;
+    outline: none;
+    cursor: pointer;
+    background-color: #5138EE;
+    font-family: "Lato";
+    font-weight: 500;
+    color: white;
+    margin-top: 20px;
+}
+
+.add-user-add-user-btn:hover {
+    background-color: #4933dd;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px inset;
+}
+
+.add-user-cancel-btn {
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.add-user-successfully-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    height: 100%;
+    width: 100%;
+}
+
+.add-user-successfully-inner-card  {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background-color: rgb(248, 248, 248);
+}
+
+.add-user-successfully-text {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 20px 0px;
+}
+
+
+.add-user-successfully-gif {
+    width: 300px;
+}
+
+
+
+
+
+
+.add-user-loading-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+
+
+
+.add-user-error-img {
+    width: 600px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 767px) {
+    .add-user-form {
+        width: 330px;
+    }
+
+    .add-user-labels {
+        font-size: 10px;
+    }
+
+    .add-user-inputs {
+        font-size: 10px;
+        padding: 16px 10px;
+    }
+
+    .add-user-btn {
+        height: 30px;
+        font-size: 10px;
+    }
+
+    .error-msg {
+        font-size: 10px;
+    }
+
+    .add-user-cancel-btn {
+        display: block;
+        height: 30px;
+        border: 0;
+        border-radius: 4px;
+        outline: none;
+        cursor: pointer;
+        border: 2px solid #5138EE;
+        font-family: "Lato";
+        font-weight: 600;
+        color: #5138EE;
+        margin-top: 10px;
+        font-size: 10px;
+        background-color: transparent;
+    }
+    
+    .add-user-successfully-inner-card {
+        width: 300px;
+    }
+     
+    .add-user-successfully-gif {
+        width: 200px;
+    }
+}

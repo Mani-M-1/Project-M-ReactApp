@@ -1,0 +1,427 @@
+:root {
+    --todoColor: #ff5757;
+    --inProgressColor: #ffd600;
+    --doneColor: #00e383;
+}
+
+
+
+.tasks-bg-container {
+    box-sizing: border-box;
+    padding: 50px 30px;
+    height: calc(100% - 72px); /*72px is the height of header so we should minus it from entire height */
+}
+
+.tasks-search-and-add-btn-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.tasks-search-card {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.tasks-search-input {
+    padding: 6px;
+    height: 35px;
+    width: 360px;
+    border: 2px solid rgb(166, 166, 166);
+    border-radius: 6px;
+    outline-color: rgb(111, 111, 111);
+}
+
+
+.add-task-btn {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 8px 12px;
+    border: 0;
+    border-radius: 4px;
+    background-color: #0077ff;
+    font-family: "Lato";
+    color: white;
+    font-size: 12px;
+    font-weight: 600;
+    cursor: pointer;
+    outline: none;
+}
+
+.tasks-search-label {
+    display: flex;
+    align-items: center;
+}
+
+.search-icon {
+    position: absolute;
+    right: 10px;
+    cursor: pointer;
+}
+
+.add-task-plus-text {
+    font-size: 18px;
+}
+
+.add-task-btn {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 8px 12px;
+    border: 0;
+    border-radius: 4px;
+    background-color: #0077ff;
+    font-family: "Lato";
+    color: white;
+    font-size: 12px;
+    font-weight: 600;
+    cursor: pointer;
+    outline: none;
+}
+
+.task-status-card {
+    margin-top: 40px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+}
+
+.status-card {
+    width: 32.5%;
+    display: flex;
+    flex-direction: column;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.count-and-status-text-wrapper {
+    background-color: grey;
+    display: flex;
+    align-items: center; 
+}
+
+.tasks-count {
+    margin-left: 10px;
+    background-color: white;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.status-text {
+    flex-grow: 1;
+    font-weight: 500;
+    justify-self: center;
+    font-size: 20px;
+    padding: 10px;
+    text-align: center;
+    color: white;
+}
+
+.droppable-columns {
+    min-height: 460px;  
+    padding: 10px;
+}
+
+.draggingOverColor {
+    background-color: rgb(242, 241, 241);
+}
+
+.notDrgaggingOverColor {
+    background-color: white;
+}
+
+.task-items {
+    user-select: none;
+    padding: 14px;
+    margin: 0 0 8px 0;
+    color: black;
+    border: 2px solid grey;
+    border-radius: 6px;
+    position: relative;
+}
+
+.task-shortid-and-details-icon-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.task-ellipsis-icon-wrapper-btn {
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+.task-details-ellipsis-icon {
+    font-size: 16px;
+}
+
+.task-short-id {
+    font-size: 12px;
+    color: rgb(156, 156, 156);
+} 
+
+.task-details-and-icon-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.task-title {
+    width: 45%;
+}
+
+.task-assignee-and-edit-icon-wrapper {
+    width: 30%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.task-edit-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+}
+
+.task-edit-icon {
+    font-size: 16px;
+}
+
+.task-end-date {
+    margin-top: 20px;
+    font-size: 12px;
+}
+
+
+
+
+
+.dragging-task {
+    background-color: #f1f1f1;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.undragging-task {
+    background-color: #ffffff;
+}
+
+
+
+
+
+.todo-status-column {
+    background-color: var(--todoColor);
+}
+
+.in-progress-status-column {
+    background-color: var(--inProgressColor);
+}
+
+.done-status-column {
+    background-color: var(--doneColor);
+}
+
+.todo-status-items {
+    border: 2px solid var(--todoColor);
+}
+
+.in-progress-status-items {
+    border: 2px solid var(--inProgressColor);
+}
+
+.done-status-items {
+    border: 2px solid var(--doneColor);
+}
+
+.todo-status-icon {
+    fill: var(--todoColor);
+}
+
+.in-progress-status-icon {
+    fill: var(--inProgressColor);
+}
+
+.done-status-icon {
+    fill: var(--doneColor);
+}
+
+
+
+
+.modal-card {
+    position: fixed;
+    background-color: red;
+    top: 50%;
+    left: 50%;
+    height: 100px;
+    z-index: 1;
+}
+
+
+
+
+
+
+
+.tasks-loading-card {
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+
+
+
+
+
+
+
+
+/* task menu options card to show when clicked on ellipsis icon */
+
+.task-menu-card-on-clicking-ellipsis-icon {
+    position: absolute;
+    background-color: rgb(0, 0, 0);
+    border-radius: 6px;
+    right: 30px;
+    top: 20px;
+    z-index: 1;
+    width: 140px;
+    overflow: hidden;
+}
+
+.task-menu-card-items {
+    cursor: pointer;
+    list-style-type: none;
+    color: white;
+    padding: 10px 20px;
+}
+
+.task-menu-card-items:hover {
+    background-color: rgb(80, 80, 80);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 767px) {
+    .tasks-bg-container {
+        padding: 25px 15px;
+        height: calc(100% - 72px); /*72px is the height of header so we should minus it from entire height */
+    }
+
+    
+    .tasks-search-card {
+        display: flex;
+        align-items: center;
+        position: relative;
+    }
+
+    .tasks-search-input {
+        height: 30px;
+        width: 220px;
+    }
+
+    .tasks-search-label {
+        display: flex;
+        align-items: center;
+    }
+
+    .search-icon {
+        position: absolute;
+        right: 10px;
+        cursor: pointer;
+    }
+
+    .add-task-plus-text {
+        font-size: 14px;
+    }
+
+    
+    .add-task-btn {
+        gap: 3px;
+        padding: 6px 8px;
+        font-size: 8px;
+    }
+
+    
+    .task-status-card {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .status-card {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+
+    .droppable-columns {
+        padding: 10px;
+        overflow-y: scroll;
+    } 
+        
+    .task-items {
+        padding: 10px;
+    }
+
+    .task-short-id {
+        font-size: 10px;
+    } 
+    
+    .task-title {
+        font-size: 14px;
+    }
+    
+    .task-assigned-to {
+        font-size: 12px;
+    }
+
+    .task-assignee-and-edit-icon-wrapper {
+        width: 40%;
+    }
+
+    .task-edit-icon {
+        font-size: 14px;
+    } 
+
+    .task-end-date {
+        font-size: 8px;
+    }
+
+
+
+}

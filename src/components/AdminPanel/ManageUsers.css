@@ -1,0 +1,331 @@
+.manage-users-bg-container {
+    height: 100%;
+    box-sizing: border-box;
+    padding: 50px 35px;
+}
+
+.manage-users-top-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.users-list-text {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.manage-users-search-and-add-btn-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.manage-users-search-card {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.manage-users-search-input {
+    font-family: "Lato";
+    font-size: 14px;
+    padding: 10px;
+    height: 36px;
+    width: 360px;
+    border: 2px solid rgb(166, 166, 166);
+    border-radius: 25px;
+    outline-color: rgb(111, 111, 111);
+}
+
+.manage-users-search-label {
+    display: flex;
+    align-items: center;
+}
+
+.manage-users-search-icon {
+    position: absolute;
+    right: 15px;
+    cursor: pointer;
+}
+
+.plus-text {
+    font-size: 18px;
+}
+
+.manage-user-add-user-btn {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 8px 20px;
+    border: 0;
+    border-radius: 8px;
+    background-color: #0077ff;
+    font-family: "Lato";
+    color: white;
+    font-size: 12px;
+    font-weight: 600;
+    cursor: pointer;
+    outline: none;
+}
+
+.users-list-card {
+    margin-top: 20px;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: #cbdcf5;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.user-list-items {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.profile-and-username-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 40%;
+}
+
+.manage-user-profile-card {
+    background-color: blueviolet;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    font-size: 18px;
+    font-weight: 600;
+    color: white;
+}
+
+.manage-user-username {
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 4px;
+}
+
+.manage-user-role {
+    font-size: 13px;
+    color: grey;
+}
+
+.manage-user-email {
+    font-size: 16px;
+    font-weight: 600;
+    width: 45%;
+}
+
+.manage-user-btn {
+    font-family: "Lato";
+    font-weight: 600;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    background-color: transparent;
+    font-size: 14px;
+}
+
+.edit {
+    color: #0085FF;
+}
+
+.remove {
+    color: #FF0000;
+}
+
+
+
+
+
+
+
+.user-details-modal-btn-card {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.user-details-modal-close-btn {
+    background-color: transparent;
+    outline: none;
+    cursor: pointer;
+    border: 0;
+} 
+
+.user-details-modal-close-icon {
+    font-size: 18px;
+}
+
+
+
+
+.manage-users-deleted-successfully-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    height: 100%;
+    width: 100%;
+}
+
+.manage-users-deleted-successfully-inner-card  {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background-color: rgb(248, 248, 248);
+}
+
+.manage-users-deleted-successfully-text {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 20px 0px;
+}
+
+
+.manage-users-deleted-successfully-gif {
+    width: 300px;
+}
+
+
+
+
+
+
+.users-not-found-card {
+    margin-top: 20px;
+    background-color: #cbdcf5;
+    border-radius: 10px;
+    width: 100%;
+    height: 95%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.users-not-found-text {
+    font-size: 30px;
+    color: #93afd8;
+}
+
+
+
+#disabledRemoveBtn {
+    color: #ffb1b1;
+    cursor: not-allowed;
+}
+
+
+
+
+
+.admin-panel-loading-card {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 767px) {
+    .manage-users-bg-container {
+        padding: 20px 15px;
+    }
+
+    .users-list-text {
+        font-size: 14px;
+    }
+
+    .manage-users-search-input {
+        font-size: 12px;
+        width: 210px;
+        height: 30px;
+    }
+
+    .manage-user-plus-text {
+        font-size: 14px;
+    }
+    
+    .manage-user-add-user-btn {
+        gap: 3px;
+        padding: 6px 8px;
+        font-size: 8px;
+    }
+
+    .users-list-card {
+        gap: 10px;
+        padding: 10px;
+    }
+
+    .profile-and-username-wrapper {
+        justify-content: flex-start;
+        width: 30%;
+    }
+
+    .manage-user-profile-card {
+        font-size: 12px;
+        width: 40px;
+        height: 35px;
+    }
+
+    .manage-user-username {
+        font-size: 8px;
+    }
+
+    .manage-user-role {
+        font-size: 6px;
+    }
+
+    .manage-user-email {
+        font-size: 8px;
+        overflow-wrap: break-word;
+    }
+
+    .manage-user-btn {
+        width: 20%;
+        text-align: end;
+        font-size: 8px;
+    }
+
+    .manage-users-deleted-successfully-inner-card  {
+        width: 300px;
+    }
+
+    .manage-users-deleted-successfully-gif {
+        width: 200px;
+    }
+}

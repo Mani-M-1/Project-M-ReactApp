@@ -1,0 +1,475 @@
+.projects-bg-container {
+    box-sizing: border-box;
+    padding: 50px 30px;
+    height: calc(100% - 72px); /*72px is the height of header so we should minus it from entire height */
+}
+
+.projects-search-and-add-btn-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.projects-search-card {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.projects-search-input {
+    padding: 6px;
+    height: 35px;
+    width: 360px;
+    border: 2px solid rgb(166, 166, 166);
+    border-radius: 6px;
+    outline-color: rgb(111, 111, 111);
+}
+
+.projects-search-label {
+    display: flex;
+    align-items: center;
+}
+
+.search-icon {
+    position: absolute;
+    right: 10px;
+    cursor: pointer;
+}
+
+.add-project-plus-text {
+    font-size: 18px;
+}
+
+.add-project-btn {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 8px 12px;
+    border: 0;
+    border-radius: 4px;
+    background-color: #0077ff;
+    font-family: "Lato";
+    color: white;
+    font-size: 12px;
+    font-weight: 600;
+    cursor: pointer;
+    outline: none;
+}
+
+.non-admin-add-project-btn {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 8px 12px;
+    border: 0;
+    border-radius: 4px;
+    background-color: #8fa7c3;
+    font-family: "Lato";
+    color: white;
+    font-size: 12px;
+    font-weight: 600;
+    cursor: pointer;
+    outline: none;
+    cursor: not-allowed;
+    position: relative;
+}
+
+.only-admin-wrapper {
+    display: none;
+    position: absolute;
+    width: 150px;
+    top: -60px;
+    left: -20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.only-admin-can-create-project-card {
+    display: none;
+    background-color: rgb(70, 70, 70);
+    border-radius: 5px;
+    padding: 10px;
+    z-index: 1;
+}
+
+.comment-type-bottom-edge-card {
+    display: none;
+    position: absolute;
+    bottom: -10px;
+    height: 30px;
+    width: 30px;
+    background-color: rgb(70, 70, 70);
+    rotate: 45deg;
+}
+
+.non-admin-add-project-btn:hover {
+    .only-admin-wrapper {
+        display: block;
+        position: absolute;
+        width: 150px;
+        top: -60px;
+        left: -20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+
+    .only-admin-can-create-project-card {
+        display: block;
+        background-color: rgb(70, 70, 70);
+        border-radius: 5px;
+        padding: 10px;
+        z-index: 1;
+    }
+
+    .comment-type-bottom-edge-card {
+        display: block;
+        position: absolute;
+        bottom: -10px;
+        height: 30px;
+        width: 30px;
+        background-color: rgb(70, 70, 70);
+        rotate: 45deg;
+    }
+} 
+
+.projects-count-and-swipe-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+.projects-count-card {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: grey;
+    padding: 6px 10px;
+    border-radius: 6px;
+}
+
+.projects-count-num {
+    width: 22px;
+    height: 22px;
+    background-color: red;
+    text-align: center;
+    font-size: 13px;
+    font-weight: 600;
+    color: black;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.projects-count-text {
+    font-size: 16px;
+    color: white;
+}
+
+.swipe-card {
+    display: flex;
+    align-items: center;
+    gap: 3px;
+    font-size: 12px;
+}
+
+.swipe-right-arrow {
+    font-size: 14px;
+}
+
+.projects-card {
+    margin-top: 60px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+}
+
+.projects-card::-webkit-scrollbar {
+    display: none;
+}
+
+.project-item {
+    width: 330px;
+    list-style-type: none;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding: 0px 30px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border-radius: 10px;
+}
+
+.project-item-project-shortid-and-delete-btn-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.project-short-id {
+    font-size: 12px;
+    color: rgb(156, 156, 156);
+}
+
+.project-delete-btn {
+    background-color: transparent;
+    outline: none;
+    cursor: pointer;
+    border: 0;
+}
+
+.project-delete-icon {
+    font-size: 18px;
+    fill: #ff4f4f;
+}
+
+.project-title {
+    font-size: 20px;
+}
+
+.project-description {
+    font-size: 16px;
+    height: 80px;
+}
+
+.project-details {
+    font-size: 14px;
+}
+
+.start-and-end-date-text-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.view-details-btn {
+    align-self: center;
+    padding: 8px 12px;
+    border: 0;
+    border-radius: 4px;
+    background-color: #0077ff;
+    font-family: "Lato";
+    color: white;
+    font-size: 12px;
+    font-weight: 600;
+    cursor: pointer;
+    outline: none;
+}
+
+.no-projects-found-card {
+    height: 86%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: rgb(159, 159, 159);
+}
+
+.no-projects-found {
+    color: rgb(139, 137, 137);
+    letter-spacing: 6px;
+    word-spacing: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 767px) {
+    .projects-bg-container {
+        padding: 25px 15px;
+        height: calc(100% - 72px); /*72px is the height of header so we should minus it from entire height */
+    }
+
+
+    .projects-search-card {
+        display: flex;
+        align-items: center;
+        position: relative;
+    }
+
+    .projects-search-input {
+        height: 30px;
+        width: 220px;
+    }
+
+    .projects-search-label {
+        display: flex;
+        align-items: center;
+    }
+
+    .search-icon {
+        position: absolute;
+        right: 10px;
+        cursor: pointer;
+    }
+
+    .add-project-plus-text {
+        font-size: 14px;
+    }
+
+    .add-project-btn {
+        gap: 3px;
+        padding: 6px 8px;
+        font-size: 8px;
+    }
+
+    .non-admin-add-project-btn {
+        gap: 3px;
+        padding: 6px 8px;
+        font-size: 8px;
+    }
+
+    .only-admin-wrapper {
+        display: none;
+        position: absolute;
+        width: 100px;
+        top: -60px;
+        left: -100px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+
+    .only-admin-can-create-project-card {
+        display: none;
+        background-color: rgb(70, 70, 70);
+        border-radius: 5px;
+        padding: 10px;
+        z-index: 1;
+    }
+
+    .comment-type-bottom-edge-card {
+        display: none;
+        position: absolute;
+        bottom: -10px;
+        height: 30px;
+        width: 30px;
+        background-color: rgb(70, 70, 70);
+        rotate: 45deg;
+    }
+
+    .non-admin-add-project-btn:hover {
+        .only-admin-wrapper {
+            display: block;
+            position: absolute;
+            width: 100px;
+            top: -60px;
+            left: -20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            
+        }
+
+        .only-admin-can-create-project-card {
+            display: block;
+            background-color: rgb(70, 70, 70);
+            border-radius: 5px;
+            padding: 10px;
+            z-index: 1;
+        }
+
+        .comment-type-bottom-edge-card {
+            display: block;
+            position: absolute;
+            bottom: -10px;
+            height: 30px;
+            width: 30px;
+            background-color: rgb(70, 70, 70);
+            rotate: 45deg;
+        }
+    } 
+
+    .projects-count-card {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        background-color: grey;
+        padding: 6px 10px;
+        border-radius: 6px;
+    }
+
+    .projects-count-num {
+        font-size: 10px;
+    }
+
+    .projects-count-text {
+        font-size: 12px;
+    }
+
+    .swipe-card {
+        font-size: 10px;
+    }
+
+    .swipe-right-arrow {
+        font-size: 12px;
+    }
+
+    .projects-card {
+        gap: 25px;
+    }
+
+    .projects-card::-webkit-scrollbar {
+        display: none;
+    }
+
+    .project-item {
+        height: 360px;
+        width: 330px;
+    }
+
+    .project-short-id {
+        font-size: 10px;
+    }
+
+    .project-delete-icon {
+        font-size: 14px;
+        fill: rgb(255, 0, 0);
+    }
+
+    .project-title {
+        width: 225px;
+        font-size: 16px;
+    }
+
+    .project-description {
+        font-size: 12px;
+    }
+
+    .project-details {
+        font-size: 12px;
+    }
+
+    .view-details-btn {
+        padding: 6px 10px;
+    }
+
+    .no-projects-found {
+        letter-spacing: 4px;
+        word-spacing: 8px;
+        font-size: 20px;
+    }
+
+    .click-add-project-btn-text {
+        font-size: 12px;
+    }
+}

@@ -1,0 +1,252 @@
+.gradient-and-form-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile-form-image-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 40px;
+}
+
+.profile-form {
+    width: 440px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.profile-labels {
+    font-size: 12px;
+    font-weight: 600;
+    margin-top: 16px;
+    margin-bottom: 4px;
+}
+
+.profile-inputs {
+    font-size: 14px;
+    padding: 18px 10px;
+    border: 2px solid rgb(226, 224, 224);
+    border-radius: 6px;
+    font-weight: 500;
+    height: 22px;
+    outline-color: rgb(141, 141, 141);
+}
+
+.save-changes-btn {
+    height: 40px;
+    border: 0;
+    border-radius: 4px;
+    outline: none;
+    cursor: pointer;
+    background-color: #5138EE;
+    font-family: "Lato";
+    font-weight: 500;
+    color: white;
+    margin-top: 20px;
+}
+
+.save-changes-btn:hover {
+    background-color: #4933dd;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px inset;
+}
+
+.profile-main-img {
+    width: 420px;
+    margin-left: 40px;
+}
+
+.error-msg {
+    color: red;
+    font-size: 12px;
+}
+
+.already-exits {
+    text-align: center;
+}
+
+.terms-and-services-text {
+    margin-top: 40px;
+    font-size: 14px;
+}
+
+.profile-footer-link-items {
+    color: rgb(0, 94, 255);
+    font-weight: 600;
+}
+
+.account-exist-text {
+    font-size: 14px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.login-text {
+    color: rgb(0, 94, 255);
+    text-decoration: none;
+    border: 0px;
+    background-color: transparent;
+    outline: none;
+    cursor: pointer;
+    font-family: "Lato";
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.password-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 6px;
+    position: relative;
+}
+
+.profile-password-input {
+    width: 100%;
+    font-size: 14px;
+    padding: 18px 10px;
+    border: 2px solid rgb(226, 224, 224);
+    border-radius: 6px;
+    font-weight: 500;
+    height: 22px;
+    outline-color: rgb(141, 141, 141);
+}
+
+.eye-wrapper {
+    position: absolute;
+    right: 10px;
+    color: rgb(126, 125, 125);
+    background-color: transparent;
+    border: 0;
+    font-size: 16px;
+    outline: none;
+    cursor: pointer;
+}
+
+.org-id {
+    cursor: not-allowed;
+    background-color: rgb(239, 239, 239);
+    color: rgb(163, 162, 162);
+}
+
+.profile-gradient-container {
+    align-self: stretch;
+    background-image: linear-gradient(to right, rgb(74, 114, 188), rgb(205, 182, 89));
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    padding-bottom: 20px;
+}
+
+.profile-img-card {
+    width: 100px;
+    background-color: rgb(100, 43, 244);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.profile-initial {
+    font-weight: 500;
+    font-size: 30px;
+    color: rgb(234, 231, 231);
+}
+
+.profile-username {
+    margin-top: 13px;
+}
+
+
+
+
+.profile-page-success-card {
+    height: 90.3vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile-page-success-inner-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(248, 248, 248);
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.profile-page-success-text {
+    font-size: 22px;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.profile-page-success-gif {
+    width: 400px;
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width: 767px) {
+    .profile-main-img {
+        display: none;
+    }
+
+    .welcome-heading {
+        font-size: 30px;
+    }
+
+    .get-started-text {
+        font-size: 14px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 767px) {
+    
+    .profile-form {
+        width: 330px;
+        min-width: 68%;
+        padding: 0px;
+    }
+
+    .profile-inputs {
+        padding: 16px 8px;
+    }
+ 
+    .profile-password-input {
+        padding: 16px 8px;
+    }
+
+}

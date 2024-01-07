@@ -1,0 +1,97 @@
+.rise-issue-bg-container {
+    height: calc(100% - 72px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.rise-issue-form {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding: 20px 25px;
+    border-radius: 10px;
+}
+
+.rise-issue-labels {
+    font-size: 12px;
+    font-weight: 600;
+    margin-top: 16px;
+    margin-bottom: 4px;
+}
+
+.rise-issue-inputs {
+    font-size: 14px;
+    padding: 8px;
+    border: 2px solid rgb(226, 224, 224);
+    border-radius: 6px;
+    font-weight: 500;
+    height: 22px;
+    outline-color: rgb(141, 141, 141);
+}
+
+.rise-issue-textarea {
+    font-size: 14px;
+    padding: 8px;
+    border: 2px solid rgb(226, 224, 224);
+    border-radius: 6px;
+    font-weight: 500;
+    outline-color: rgb(141, 141, 141);
+    font-family: "Lato";
+}
+
+.rise-issue-cancel-btn {
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 767px) {   
+    .rise-issue-form {
+        width: 330px;
+        padding: 20px 25px;
+    }
+        
+    .rise-issue-labels {
+        font-size: 10px;
+    }
+
+    .rise-issue-inputs {
+        font-size: 12px;
+        padding: 16px 10px;
+    }
+
+    .rise-issue-textarea {
+        font-size: 12px;
+    }
+    
+    .rise-issue-cancel-btn {
+        display: block;
+        height: 30px;
+        border: 0;
+        border-radius: 4px;
+        outline: none;
+        cursor: pointer;
+        border: 2px solid #5138EE;
+        font-family: "Lato";
+        font-weight: 600;
+        color: #5138EE;
+        margin-top: 10px;
+        font-size: 10px;
+        background-color: transparent;
+    }
+}

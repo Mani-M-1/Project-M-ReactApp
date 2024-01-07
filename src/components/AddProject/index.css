@@ -1,0 +1,164 @@
+.add-project-bg-container {
+    height: calc(100% - 72px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.add-project-form {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding: 20px 25px;
+    border-radius: 10px;
+}
+
+.add-project-labels {
+    font-size: 12px;
+    font-weight: 600;
+    margin-top: 16px;
+    margin-bottom: 4px;
+}
+
+.add-project-inputs {
+    font-size: 14px;
+    padding: 18px 10px;
+    border: 2px solid rgb(226, 224, 224);
+    border-radius: 6px;
+    font-weight: 500;
+    height: 22px;
+    outline-color: rgb(141, 141, 141);
+}
+
+.add-project-textarea {
+    font-size: 14px;
+    padding: 10px;
+    border: 2px solid rgb(226, 224, 224);
+    border-radius: 6px;
+    font-weight: 500;
+    outline-color: rgb(141, 141, 141);
+    font-family: "Lato";
+}
+
+.start-and-end-date-cards {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.add-project-date-card {
+    display: flex;
+    flex-direction: column;
+}
+
+.create-project-btn {
+    height: 40px;
+    border: 0;
+    border-radius: 4px;
+    outline: none;
+    cursor: pointer;
+    background-color: #5138EE;
+    font-family: "Lato";
+    font-weight: 500;
+    color: white;
+    margin-top: 20px;
+}
+
+.create-project-btn:hover {
+    background-color: #4933dd;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px inset;
+}
+
+.project-created-successfully-card {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding: 20px;
+    width: 360px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.project-created-successfully-text {
+    margin-top: 40px;
+    font-size: 20px;
+}
+
+.project-created-successfully-tick-gif {
+    width: 80%;
+}
+
+.add-project-cancel-btn {
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 767px) {
+    
+    .add-project-form {
+        width: 330px;
+    }
+
+    .add-project-labels {
+        font-size: 10px;
+    }
+
+    .add-project-inputs {
+        font-size: 10px;
+        padding: 16px 10px;
+    }
+
+    input[type="date"] {
+        padding: 16px 10px;
+        width: 120px;
+    }
+        
+    .add-project-textarea {
+        font-size: 11px;
+        padding: 10px 12px;
+    }
+
+    .create-project-btn {
+        height: 30px;
+        font-size: 10px;
+    }
+
+    .error-msg {
+        font-size: 10px;
+    }
+
+    
+    .project-created-successfully-card {
+        width: 300px;
+    }
+
+    .add-project-cancel-btn {
+        display: block;
+        height: 30px;
+        border: 0;
+        border-radius: 4px;
+        outline: none;
+        cursor: pointer;
+        border: 2px solid #5138EE;
+        font-family: "Lato";
+        font-weight: 600;
+        color: #5138EE;
+        margin-top: 10px;
+        font-size: 10px;
+        background-color: transparent;
+    }
+
+
+
+}

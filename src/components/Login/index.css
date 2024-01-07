@@ -1,0 +1,152 @@
+.login-bg-container {
+    padding: 25px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo-container {
+    align-self: flex-start;
+}
+
+.account-login-heading {
+    margin-bottom: 10px;
+    font-size: 40px;
+}
+
+.start-creating-projects-text {
+    margin: 10px 0px;
+}
+
+.login-form-image-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 60px;
+}
+
+.login-form {
+    width: 380px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.login-labels {
+    font-size: 12px;
+    font-weight: 600;
+    margin-top: 16px;
+    margin-bottom: 4px;
+}
+
+.login-inputs {
+    font-size: 14px;
+    padding: 18px 10px;
+    border: 2px solid rgb(226, 224, 224);
+    border-radius: 6px;
+    font-weight: 500;
+    height: 22px;
+    outline-color: rgb(141, 141, 141);
+}
+
+.login-btn {
+    height: 40px;
+    border: 0;
+    border-radius: 4px;
+    outline: none;
+    cursor: pointer;
+    background-color: #5138EE;
+    font-family: "Lato";
+    font-weight: 500;
+    color: white;
+    margin-top: 20px;
+}
+
+.login-btn:hover {
+    background-color: #4933dd;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px inset;
+}
+
+.login-main-img {
+    width: 500px;
+    margin-left: 40px;
+}
+
+.error-msg {
+    color: red;
+    font-size: 12px;
+}
+
+.dont-have-account-text {
+    font-size: 14px;
+    text-align: center;
+    padding-top: 60px;
+}
+
+.register-here-text {
+    color: rgb(0, 94, 255);
+    text-decoration: none;
+    border: 0px;
+    background-color: transparent;
+    outline: none;
+    cursor: pointer;
+    font-family: "Lato";
+    font-weight: 600;
+    font-size: 14px;
+}
+
+
+
+.password-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 6px;
+    position: relative;
+}
+
+.login-password-input {
+    width: 100%;
+    font-size: 14px;
+    padding: 18px 10px;
+    border: 2px solid rgb(226, 224, 224);
+    border-radius: 6px;
+    font-weight: 500;
+    height: 22px;
+    outline-color: rgb(141, 141, 141);
+}
+
+.eye-wrapper {
+    position: absolute;
+    right: 10px;
+    color: rgb(126, 125, 125);
+    background-color: transparent;
+    border: 0;
+    font-size: 16px;
+    outline: none;
+    cursor: pointer;
+}
+
+
+
+
+
+@media screen and (max-width: 767px) {
+    .login-main-img {
+        display: none;
+    }
+
+    .account-login-heading {
+        font-size: 24px;
+        padding-top: 40px;
+    }
+
+    .start-creating-projects-text {
+        font-size: 14px;
+    }
+    
+    .login-form {
+        width: 350px;
+    }
+}

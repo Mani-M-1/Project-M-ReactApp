@@ -1,0 +1,174 @@
+.help-center-bg-container {
+    height: 100vh;
+    background-size: cover;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.help-center-bg-image {
+    width: 100%;
+    height: 45vh;
+}
+
+.help-center-hovering-wrapper {
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+}
+
+.help-center-hello-text {
+    font-size: 22px;
+    padding: 60px 0px;
+}
+
+.help-center-main-card {
+    padding: 0;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.help-center-link-items {
+    text-decoration: none;
+    color: black;
+}
+
+.help-center-main-card-items {
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 4px;
+    height: 200px;
+    width: 200px;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.help-center-main-card-imgs {
+    width: 80px;
+}
+
+.help-center-main-card-title {
+    font-size: 16px;
+}
+
+.help-center-bottom-card {
+    margin-top: 50px;
+    min-width: 680px;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.help-center-bottom-card-items {
+    padding: 10px;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 4px;
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.help-center-bottom-card-imgs {
+    width: 50px;
+}
+
+.help-center-bottom-card-title-and-description-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.help-center-bottom-card-title {
+    font-size: 14px;
+}
+
+.help-center-bottom-card-description {
+    font-size: 12px;
+    font-weight: 600;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 767px) {
+    
+    .help-center-bg-image {
+        width: 100%;
+        height: 33vh;
+    } 
+
+    .help-center-hovering-wrapper {
+        padding: 0;
+    }
+
+    .help-center-hello-text {
+        font-size: 18px;
+    }
+
+    .help-center-main-card-items {
+        height: 150px;
+        width: 150px;
+    }
+
+    .help-center-main-card-imgs {
+        width: 50px;
+    }
+
+    .help-center-main-card-title {
+        font-size: 14px;
+    }
+
+    .help-center-bottom-card {
+        min-width: 0;
+        width: 90%;
+    }
+
+    .help-center-bottom-card-imgs {
+        width: 45px;
+    }
+
+    .help-center-bottom-card-title {
+        font-size: 12px;
+    }
+
+    .help-center-bottom-card-description {
+        font-size: 10px;
+    }
+}

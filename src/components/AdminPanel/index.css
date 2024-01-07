@@ -1,0 +1,70 @@
+.admin-panel-bg-container {
+    box-sizing: border-box;
+    height: calc(100% - 72px);
+    display: flex;
+}
+
+.admin-panel-side-bar {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    padding: 40px;
+    border-right: 2px solid #C2C2C2;
+}
+
+.admin-tab-items {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    cursor: pointer;
+}
+
+.admin-tab-icon {
+    width: 25px;
+}
+
+.admin-tab-title {
+    font-size: 16px;
+    font-weight: 600;
+    width: 140px;
+    color: #817D7D;
+}
+
+.tab-active {
+    color: #065AFF;
+}
+
+.admin-panel-right-card {
+    flex-grow: 1;
+    background-color: #E9F2FF;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 767px) {
+    .admin-panel-side-bar {
+        display: none;
+    }
+
+}

@@ -1,0 +1,170 @@
+.delete-project-modal-bg-container {
+    height: calc(100% - 72px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+
+
+.delete-project-modal-btn-card {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.delete-project-modal-close-btn {
+    background-color: transparent;
+    outline: none;
+    cursor: pointer;
+    border: 0;
+} 
+
+.delete-project-modal-close-icon {
+    font-size: 18px;
+}
+
+
+
+
+
+
+
+.delete-project-successfully-deleted-card {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    background-color: rgb(248, 248, 248);
+}
+
+.delete-project-successfully-deleted-text {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+
+.delete-project-successfully-deleted-gif {
+    width: 300px;
+}
+
+
+
+
+
+
+
+
+.delete-project-modal-card {
+    width: 400px;
+    height: 140px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.delete-project-modal-btns-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.delete-project-modal-btns {
+    font-family: "Lato";
+    font-size: 16px;
+    font-weight: 600;
+    padding: 6px 30px;
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+    
+}
+
+#yesBtnForAcceptDeletion {
+    border: 2px solid #ff4f4f;
+    background-color: transparent;
+    color: #ff4f4f;
+} 
+
+#noBtnForRejectDeletion {
+    border: 2px solid #268afc;
+    background-color: transparent;
+    color: #268afc;
+} 
+
+#yesBtnForAcceptDeletion:hover {
+    background-color: #ff4f4f;
+    color: white;
+}
+
+#noBtnForRejectDeletion:hover {
+    background-color: #268afc;
+    color: white;
+}
+
+.delete-project-modal-text {
+    margin-top: 30px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.delete-project-modal-project-title {
+    font-size: 20px;
+    font-weight: 600;
+    color: #ff4f4f;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 767px) {
+
+    .delete-project-modal-close-icon {
+        font-size: 18px;
+    }
+
+    .delete-project-successfully-deleted-card {
+        width: 200px;
+    }
+
+    .delete-project-successfully-deleted-text {
+        font-size: 14px;
+    }
+
+
+    .delete-project-successfully-deleted-gif {
+        width: 150px;
+    }
+
+    .delete-project-modal-card {
+        width: 280px;
+        height: 135px;
+    }
+
+    .delete-project-modal-btns {
+        font-size: 12px;
+        padding: 5px 20px;
+    }
+
+    .delete-project-modal-text {
+        font-size: 14px;
+    }
+
+    .delete-project-modal-project-title {
+        font-size: 16px;
+        color: #ff4f4f;
+    }
+}
