@@ -185,7 +185,8 @@
 
 .projects-card {
     margin-top: 60px;
-    padding: 5px;
+    padding: 10px;
+    margin-left: -10px;
     display: flex;
     align-items: center;
     gap: 40px;
@@ -198,7 +199,7 @@
 }
 
 .project-item {
-    width: 330px;
+    min-width: 330px;
     list-style-type: none;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     padding: 0px 30px;
@@ -434,7 +435,7 @@
 
     .project-item {
         height: 360px;
-        width: 330px;
+        min-width: 240px;
     }
 
     .project-short-id {
