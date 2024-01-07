@@ -9,7 +9,7 @@ import {AiOutlineClose} from 'react-icons/ai';
 import userContext from '../../context/user/userContext';
 
 
-import config from './config';
+import config from '../../config';
 
 
 const customStyles = {

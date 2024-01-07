@@ -14,7 +14,7 @@ import ModalForDeletingTask from './ModalForDeletingTask';
 import userContext from '../../context/user/userContext';
 
 
-import config from './config';
+import config from '../../config';
 
 
 function Tasks() {

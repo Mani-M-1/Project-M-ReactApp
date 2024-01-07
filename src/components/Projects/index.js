@@ -9,8 +9,7 @@ import {FaTrash} from 'react-icons/fa';
 import userContext from '../../context/user/userContext';
 import ModalForDeleteProject from './ModalForDeleteProject';
 
-
-import config from './config';
+import config from '../../config';
 
 function Projects() {
   const apiUrl = config.API_BASE_URL;

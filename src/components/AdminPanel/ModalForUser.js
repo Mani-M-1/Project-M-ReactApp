@@ -5,8 +5,7 @@ import {AiOutlineClose} from 'react-icons/ai';
 import {BsEyeSlash, BsEye} from 'react-icons/bs'
 
 
-
-import config from './config';
+import config from '../../config';
 
 
 

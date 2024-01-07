@@ -5,7 +5,7 @@ import {BsSearch} from 'react-icons/bs';
 
 
 
-import config from './config';
+import config from '../../config';
 
 const MessageCenter = () => {
     const apiUrl = config.API_BASE_URL;

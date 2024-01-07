@@ -5,7 +5,7 @@ import {BsEyeSlash, BsEye} from 'react-icons/bs'
 
 
 
-import config from './config';
+import config from '../../config';
 
 
 function Signup() {

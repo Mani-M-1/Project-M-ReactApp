@@ -2,8 +2,7 @@ import './index.css';
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 
-
-import config from './config';
+import config from '../../config';
 
 
 const RiseIssue = () => {

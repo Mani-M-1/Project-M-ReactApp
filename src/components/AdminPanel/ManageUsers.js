@@ -8,8 +8,7 @@ import ModalForUser from './ModalForUser';
 import userContext from '../../context/user/userContext';
 
 
-
-import config from './config';
+import config from '../../config';
 
 
 

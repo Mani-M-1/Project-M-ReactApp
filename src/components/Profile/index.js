@@ -5,8 +5,7 @@ import {BsEyeSlash, BsEye} from 'react-icons/bs'
 
 import userContext from '../../context/user/userContext';
 
-
-import config from './config';
+import config from '../../config';
 
 const Profile = () => {
     const apiUrl = config.API_BASE_URL;
