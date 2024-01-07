@@ -23,7 +23,7 @@
 
 .rise-issue-inputs {
     font-size: 14px;
-    padding: 8px;
+    padding: 16px 10px;
     border: 2px solid rgb(226, 224, 224);
     border-radius: 6px;
     font-weight: 500;
@@ -33,7 +33,7 @@
 
 .rise-issue-textarea {
     font-size: 14px;
-    padding: 8px;
+    padding: 16px 10px;
     border: 2px solid rgb(226, 224, 224);
     border-radius: 6px;
     font-weight: 500;

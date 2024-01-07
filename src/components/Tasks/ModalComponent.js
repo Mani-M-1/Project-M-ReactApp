@@ -286,9 +286,10 @@ function ModalComponent(props) {
             
             {isEditable 
                 ? <textarea rows={4} cols={40} id='taskDescription' className='modal-textarea' name='taskDescription' value={form.taskDescription}  placeholder='Enter Task Description' onChange={handleOnchangeInput} onBlur={onBlurInput} />
-                : <div className='modal-inputs non-editable'>
-                    {form.taskDescription}
-                </div>
+                : <textarea disabled="true" rows={4} cols={40} id='taskDescription' className='modal-textarea' name='taskDescription' value={form.taskDescription} />
+                // : <div className='modal-inputs non-editable'>
+                //     {form.taskDescription}
+                // </div>
             }
             {taskDescriptionErr.showTaskDescriptionErr && <p className='error-msg'>{taskDescriptionErr.taskDescriptionErrMsg}</p>}
 
