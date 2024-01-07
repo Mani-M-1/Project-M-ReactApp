@@ -19,12 +19,14 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "build:staging": "REACT_APP_ENV=staging react-scripts build",
-    "build:production": "REACT_APP_ENV=production react-scripts build",
+    "build:dev": "react-scripts build",
+    "build:stag": "cross-env REACT_APP_NODE_ENV=staging react-scripts build",
+    "build:prod": "cross-env REACT_APP_NODE_ENV=production react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "start:dev": "cross-env REACT_APP_NODE_ENV=development HOST=localhost PORT=3001 react-scripts start",
+    "start:stag": "cross-env REACT_APP_NODE_ENV=staging HOST=localhost PORT=3002 react-scripts start",
+    "start:prod": "cross-env REACT_APP_NODE_ENV=production HOST=localhost PORT=3003 react-scripts start"
   },
   "eslintConfig": {
     "extends": [
@@ -43,5 +45,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.3"
   }
 }
